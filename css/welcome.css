@@ -1,0 +1,85 @@
+.indigo { 
+  background-color: #4b0082; }
+
+.rainbow {
+    background: linear-gradient(90deg,
+      hsl(0, 100%, 50%),
+      hsl(30, 100%, 50%),
+      hsl(60, 100%, 50%),
+      hsl(90, 100%, 50%),
+      hsl(120, 100%, 50%),
+      hsl(150, 100%, 50%),
+      hsl(180, 100%, 50%),
+      hsl(210, 100%, 50%),
+      hsl(240, 100%, 50%),
+      hsl(270, 100%, 50%),
+      hsl(300, 100%, 50%),
+      hsl(330, 100%, 50%),
+      hsl(360, 100%, 50%)
+    );
+  }
+
+.fat {
+  font-weight: 600;
+}
+
+img{
+  max-width:450px;
+  max-height:450px;
+}
+
+.card {
+  height: 36em;
+}
+
+#screamer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  
+  
+}
+
+.scream {
+width: 2900px;
+height: 1440px;
+}
+
+#screamer img {
+  max-width: 100%;
+  max-height: 100%;
+  animation: blink 0.1s infinite;
+}
+
+@keyframes blink {
+  0% {
+      filter: invert(0);
+      opacity: 1;
+  }
+  50% {
+      filter: invert(1);
+      opacity: 0;
+  }
+  100% {
+      filter: invert(0);
+      opacity: 1;
+  }
+}
+
+
+#scare-button {
+  position: relative;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
